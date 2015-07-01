@@ -32,7 +32,7 @@ namespace RobotWars
                 throw new ArgumentNullException("commandLine"); 
             }
                 
-            var commands = commandLine.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+            var commands = commandLine.Split(new[] { '\n' }, StringSplitOptions.None);
 
             foreach (var command in commands)
             {
