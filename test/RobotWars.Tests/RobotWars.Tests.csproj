@@ -45,12 +45,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\src\RobotWars\RobotWars.csproj">
       <Project>{2CCC712F-2BF1-4FAD-A720-AA49A28569B8}</Project>
       <Name>RobotWars</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
