@@ -140,8 +140,6 @@ namespace RobotWars
                 throw new InvalidOperationException("Move Invalid For Arena Size");
             }
 
-            Console.WriteLine("X: {0}, Y: {1} {2}", newPosition.XCoordinate, newPosition.YCoordinate, newPosition.Orientation);
-
             Position = newPosition;
         }
                         

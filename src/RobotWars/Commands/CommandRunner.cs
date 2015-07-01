@@ -49,8 +49,6 @@ namespace RobotWars
 
         private ICommand SetupArenaCommand()
         {
-            Console.WriteLine("Arena");
-
             arena = new RectangleArena();
 
             return new SetupArenaCommand(arena);
@@ -58,8 +56,6 @@ namespace RobotWars
 
         private ICommand SetupRobotCommand()
         {
-            Console.WriteLine("Robot");
-
             robots.Add(new Robot(arena));
 
             return new StartPositionCommand(GetActiveRobot());
@@ -67,8 +63,6 @@ namespace RobotWars
 
         private ICommand SetRobotMoveCommand()
         {
-            Console.WriteLine("Move");
-
             return new MoveCommand(GetActiveRobot());   
         }
 

@@ -33,8 +33,6 @@ namespace RobotWars
 
             foreach (var arg in args)
             {
-                Console.WriteLine("Args " + arg);
-
                 if (!moveCommandMapping.ContainsKey(arg))
                 {
                     throw new ArgumentException("Argument: 'command' is invalid");
